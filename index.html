@@ -433,6 +433,180 @@ body { font-family: 'Sarabun', sans-serif; background: #0d1f2d; }
 
 </section>
 
+<!-- ══ TIMELINE SECTION ══ -->
+<section class="tl-section">
+<style>
+.tl-section {
+  background: #f0f4f8;
+  padding: 72px 40px 80px;
+}
+.tl-inner { max-width: 860px; margin: 0 auto; }
+.tl-header { text-align: center; margin-bottom: 52px; }
+.tl-eyebrow {
+  display: inline-block;
+  font-size: 11px; font-weight: 700; letter-spacing: 3.5px;
+  text-transform: uppercase; color: #2da89a; margin-bottom: 12px;
+}
+.tl-title {
+  font-family: 'Prompt', sans-serif;
+  font-size: clamp(24px, 3.5vw, 36px); font-weight: 900; color: #1a2f5a;
+}
+.tl-track {
+  position: relative;
+  padding-left: 0;
+}
+.tl-track::before {
+  content: '';
+  position: absolute; left: 148px; top: 20px; bottom: 20px; width: 2px;
+  background: linear-gradient(to bottom, #2da89a 80%, rgba(45,168,154,.1));
+}
+.tl-item {
+  display: flex; align-items: flex-start; gap: 0;
+  margin-bottom: 20px;
+}
+.tl-item:last-child { margin-bottom: 0; }
+.tl-left {
+  width: 138px; flex-shrink: 0;
+  text-align: right; padding-right: 22px; padding-top: 13px;
+}
+.tl-badge {
+  display: inline-block; background: #1a2f5a; color: #fff;
+  font-family: 'Prompt', sans-serif; font-size: 11px; font-weight: 800;
+  padding: 3px 10px; border-radius: 20px; letter-spacing: 1px; margin-bottom: 5px;
+}
+.tl-range { display: block; font-size: 11px; color: #8a9ab0; line-height: 1.4; }
+.tl-dot {
+  width: 14px; height: 14px; border-radius: 50%;
+  background: #2da89a; border: 3px solid #f0f4f8;
+  box-shadow: 0 0 0 2px #2da89a;
+  flex-shrink: 0; margin-top: 16px; position: relative; z-index: 1;
+}
+.tl-dot.last { background: #f5c842; box-shadow: 0 0 0 2px #f5c842; }
+.tl-card {
+  flex: 1; background: #fff; border-radius: 14px;
+  padding: 16px 22px; margin-left: 20px;
+  box-shadow: 0 2px 12px rgba(26,47,90,.07); border: 1.5px solid #e8ecf5;
+  transition: transform .2s, box-shadow .2s;
+}
+.tl-card:hover { transform: translateX(4px); box-shadow: 0 6px 24px rgba(26,47,90,.12); }
+.tl-card-title {
+  font-family: 'Prompt', sans-serif; font-size: 15px; font-weight: 800;
+  color: #1a2f5a; margin-bottom: 5px;
+}
+.tl-card-desc { font-size: 13.5px; color: #6a7a8e; line-height: 1.65; }
+@media(max-width: 600px) {
+  .tl-track::before { left: 100px; }
+  .tl-left { width: 90px; padding-right: 14px; }
+  .tl-section { padding: 48px 20px 56px; }
+}
+</style>
+  <div class="tl-inner">
+    <div class="tl-header">
+      <div class="tl-eyebrow">ลำดับเวลา</div>
+      <h2 class="tl-title">ภาพรวมการฝึกงาน</h2>
+    </div>
+    <div class="tl-track">
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-badge">W1</span>
+          <span class="tl-range">20–24 เม.ย. 69</span>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-card-title">รับการปฐมนิเทศและเรียนรู้ระบบงาน</div>
+          <div class="tl-card-desc">ทำความรู้จักกับองค์กรและบุคลากร เข้าร่วมประชุม จัดเตรียม Conference Room และซ่อมแซมเครื่องสำรองไฟห้อง ER</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-badge">W2</span>
+          <span class="tl-range">27 เม.ย.–1 พ.ค. 69</span>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-card-title">ซ่อมบำรุงและติดตั้งอุปกรณ์คอมพิวเตอร์</div>
+          <div class="tl-card-desc">เปลี่ยนแบต Mainboard และ Power Supply บันทึกงาน Service ลงเว็บไซต์คลังข้อมูล และติดตั้ง Router ห้องคลังยา</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-badge">W3</span>
+          <span class="tl-range">4–8 พ.ค. 69</span>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-card-title">ดูแลระบบและบำรุงรักษาเชิงป้องกัน</div>
+          <div class="tl-card-desc">เปลี่ยนแบต UPS บันทึกงาน Service ย้อนหลัง เปลี่ยน Power Supply และทำความสะอาดอุปกรณ์คอมพิวเตอร์ด้วยลมอัด</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-badge">W4</span>
+          <span class="tl-range">11–15 พ.ค. 69</span>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-card-title">ติดตั้งและตั้งค่าระบบเครือข่าย</div>
+          <div class="tl-card-desc">ติดตั้งและตั้งค่า Router หลายตัวให้ไม่หน่วงและไม่แย่งสัญญาณกัน รวมถึงเปลี่ยน CPU</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-badge">W5</span>
+          <span class="tl-range">18–22 พ.ค. 69</span>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-card-title">ติดตั้งอุปกรณ์และรับมอบโครงการ</div>
+          <div class="tl-card-desc">ติดตั้ง UPS และคอมพิวเตอร์ใหม่ ตั้งค่า IP เครื่องปริ้นท์ รับฟังแนวทางพัฒนาเว็บไซต์ OPD และเข้าร่วมซ้อมดับเพลิง</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-badge">W6</span>
+          <span class="tl-range">25–29 พ.ค. 69</span>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-card-title">พัฒนาและนำเสนอเว็บไซต์ OPD</div>
+          <div class="tl-card-desc">สร้างเว็บไซต์บันทึกสถิติคิวและตัวชี้วัด QA สำหรับหน่วยงาน OPD และนำเสนอผลงานต่อหัวหน้าหน่วยงาน</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-badge">W7</span>
+          <span class="tl-range">1–5 มิ.ย. 69</span>
+        </div>
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-card-title">รับการนิเทศและประชุม Telemedicine</div>
+          <div class="tl-card-desc">รับฟังการประชุม Online เรื่อง Telemedicine รับสายโทรศัพท์ประสานงาน และรับการนิเทศฝึกงาน Online จากอาจารย์</div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-left">
+          <span class="tl-badge">W8</span>
+          <span class="tl-range">8–16 มิ.ย. 69</span>
+        </div>
+        <div class="tl-dot last"></div>
+        <div class="tl-card">
+          <div class="tl-card-title">สรุปผลและอำลาหน่วยงาน</div>
+          <div class="tl-card-desc">ซ่อมเครื่องปริ้นสติ๊กเกอร์ห้อง ER และห้องคลอด ติดตั้งโปรแกรม Proxmox VE และกล่าวขอบคุณอำลาหน่วยงาน</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ══ FOOTER ══ -->
 <footer class="page-footer">
   รายงานการฝึกงาน โรงพยาบาลบึงสามัคคี · สิตรินทร์ ผาเลิศ 
