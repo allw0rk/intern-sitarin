@@ -71,6 +71,8 @@ footer span{color:#f5c842;font-weight:700;}
   .stats-row{grid-template-columns:repeat(2,1fr);}
   .page-hero{padding:40px 24px 36px;}
   .content{padding:36px 16px 60px;}
+  .learned-grid{grid-template-columns:1fr !important;}
+  .learned-grid>div{border-right:none !important;}
 }
 </style>
 </head>
@@ -181,6 +183,60 @@ footer span{color:#f5c842;font-weight:700;}
 
     </div>
   </div>
+
+  <!-- สิ่งที่ได้เรียนรู้ -->
+  <div style="margin-top:28px;">
+    <div style="background:#fff;border-radius:20px;box-shadow:0 4px 24px rgba(26,47,90,.08);overflow:hidden;">
+      <div style="padding:28px 32px 20px;display:flex;align-items:center;gap:12px;border-bottom:1.5px solid #f0f4f8;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f5c842" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        <h2 style="font-family:'Prompt',sans-serif;font-size:18px;font-weight:900;color:#1a2f5a;margin:0;">สิ่งที่ได้เรียนรู้จากการฝึกงาน</h2>
+      </div>
+      <div class="learned-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
+
+        <div style="padding:24px 28px;border-bottom:1.5px solid #f0f4f8;border-right:1.5px solid #f0f4f8;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <div style="width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#1a2f5a,#2da89a);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div style="font-family:'Prompt',sans-serif;font-size:14px;font-weight:800;color:#1a2f5a;">ด้านฮาร์ดแวร์ <span style="color:#8a9ab0;font-weight:600;">(Hardware)</span></div>
+          </div>
+          <p style="font-size:14px;color:#5a6a7e;line-height:1.75;">ซ่อมบำรุงและเปลี่ยนอุปกรณ์จริง เช่น เครื่องสำรองไฟ UPS, Power Supply, CPU, แบต Mainboard และทำความสะอาดด้วยลมอัด รวมถึงซ่อมเครื่องปริ้นสติ๊กเกอร์ ทำให้เข้าใจการแก้ปัญหาตั้งแต่เปลี่ยนแบต ซ่อม ไปจนถึงเปลี่ยนทั้งเครื่อง</p>
+        </div>
+
+        <div style="padding:24px 28px;border-bottom:1.5px solid #f0f4f8;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <div style="width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#1b5e3b,#2da89a);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <div style="font-family:'Prompt',sans-serif;font-size:14px;font-weight:800;color:#1a2f5a;">ด้านเครือข่าย <span style="color:#8a9ab0;font-weight:600;">(Network)</span></div>
+          </div>
+          <p style="font-size:14px;color:#5a6a7e;line-height:1.75;">ติดตั้งและตั้งค่า Router หลายตัวให้ทำงานร่วมกันได้โดยไม่หน่วงและไม่แย่งสัญญาณกัน รวมถึงการวางสาย LAN และจัดการ IP Address ภายในโรงพยาบาล</p>
+        </div>
+
+        <div style="padding:24px 28px;border-right:1.5px solid #f0f4f8;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <div style="width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#2563eb,#2da89a);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div style="font-family:'Prompt',sans-serif;font-size:14px;font-weight:800;color:#1a2f5a;">ด้านการพัฒนาเว็บ <span style="color:#8a9ab0;font-weight:600;">(Software)</span></div>
+          </div>
+          <p style="font-size:14px;color:#5a6a7e;line-height:1.75;">พัฒนาเว็บไซต์บันทึกสถิติให้หน่วยงาน OPD ตั้งแต่ออกแบบ พัฒนา จนถึงนำเสนอ รวมถึงได้ลองติดตั้ง Proxmox VE สำหรับงาน Virtualization</p>
+        </div>
+
+        <div style="padding:24px 28px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;">
+            <div style="width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,#7c3aed,#2da89a);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div style="font-family:'Prompt',sans-serif;font-size:14px;font-weight:800;color:#1a2f5a;">ด้านการทำงานในองค์กร</div>
+          </div>
+          <p style="font-size:14px;color:#5a6a7e;line-height:1.75;">รับสายโทรศัพท์ ประสานงาน บันทึกงาน Service เข้าร่วมประชุม ทำให้เข้าใจการทำงานเป็นทีมและบริบทของสถานพยาบาลได้อย่างชัดเจน</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <footer>
